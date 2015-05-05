@@ -479,7 +479,7 @@ function nox {
     ./boot.sh
     mkdir build
     cd build
-    ../configure
+    ../configure -with-boost=/usr/lib/x86_64-linux-gnu
     make -j3
     #make check
 
