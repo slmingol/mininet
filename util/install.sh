@@ -556,7 +556,7 @@ function cbench {
     fi
     cd $BUILD_DIR/
     #git clone git://gitosis.stanford.edu/oflops.git
-    git clone https://github.com/andi-bigswitch/oflogs.git
+    git clone https://github.com/andi-bigswitch/oflops.git
     cd oflops
     sh boot.sh || true # possible error in autoreconf, so run twice
     sh boot.sh
