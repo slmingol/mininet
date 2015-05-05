@@ -467,6 +467,8 @@ function nox {
     fi
 
     # Apply patches
+    git config --global user.email "you@example.com"
+    git config --global user.name "Your Name"
     git checkout -b tutorial-destiny
     git am $MININET_DIR/mininet/util/nox-patches/*tutorial-port-nox-destiny*.patch
     if [ "$DIST" = "Ubuntu" ] && version_ge $RELEASE 12.04; then
@@ -513,7 +515,7 @@ function nox13 {
     ./boot.sh
     mkdir build
     cd build
-    ../configure
+    ../configure -with-boost=/usr/lib/x86_64-linux-gnu
     make -j3
     #make check
 
