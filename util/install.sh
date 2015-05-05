@@ -460,7 +460,7 @@ function nox {
 
     # Fetch NOX destiny
     cd $BUILD_DIR/
-    git clone https://github.com/noxrepo/nox-classic.git noxcore
+    git clone https://github.com/slmingol/nox-classic.git noxcore
     cd noxcore
     if ! git checkout -b destiny remotes/origin/destiny ; then
         echo "Did not check out a new destiny branch - assuming current branch is destiny"
