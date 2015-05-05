@@ -404,7 +404,7 @@ function ivs {
 
     # Install IVS from source
     cd $BUILD_DIR
-    git clone git://github.com/floodlight/ivs $IVS_SRC --recursive
+    git clone https://github.com/floodlight/ivs $IVS_SRC --recursive
     cd $IVS_SRC
     make
     sudo make install
@@ -556,7 +556,7 @@ function cbench {
     fi
     cd $BUILD_DIR/
     #git clone git://gitosis.stanford.edu/oflops.git
-    git https://github.com/andi-bigswitch/oflogs.git
+    git clone https://github.com/andi-bigswitch/oflogs.git
     cd oflops
     sh boot.sh || true # possible error in autoreconf, so run twice
     sh boot.sh
