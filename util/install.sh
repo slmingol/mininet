@@ -161,7 +161,8 @@ function of {
     else
         $install git-core autotools-dev pkg-config libc6-dev
     fi
-    git clone git://openflowswitch.org/openflow.git
+    #git clone git://openflowswitch.org/openflow.git
+    git clone https://github.com/mgkwill/openflow.git
     cd $BUILD_DIR/openflow
 
     # Patch controller to handle more than 16 switches
